@@ -1,0 +1,157 @@
+/* Estilos generales (modo claro por defecto) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    position: fixed; /* Fija el menú en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000; /* Asegura que el menú esté encima de otros elementos */
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Dispone los elementos horizontalmente */
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .menu li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo del interruptor de tema */
+  .theme-switch {
+    display: flex;
+    align-items: center;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 20px;
+  }
+  
+  .switch input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #555;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  /* Estilo del contenido principal y el pie de página */
+  #theme-wrapper {
+    padding-top: 60px; /* Espacio para el menú fijo */
+  }
+  
+  .registro {
+    width: 50%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="tel"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button.submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Pie de página */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+  }
+  
